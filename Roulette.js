@@ -1,6 +1,6 @@
 window.onload = function() {
+    var numberOfStarts = Number(document.getElementById('label').value);
     document.getElementById('start').onclick = function() {
-        var numberOfStarts = Number(document.getElementById('label').value);
         if (isNumber(numberOfStarts) && (numberOfStarts != 0)) {
             var priceMas = fillPrices(4, 2, 1, 1);
             var index = randomize(numberOfStarts, priceMas.length);
